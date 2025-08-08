@@ -149,7 +149,15 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-
+const convertTemperature = (temp, scale) => {
+    if (scale === 'C') {
+        return `${((temp - 32) * 5) /9} (Fahrenheit)`
+    } else if (scale === 'F') {
+        return `${((temp * 9) / 5) - 32} (Celsius)`
+    } else {
+        return 'invalid scale'
+    }
+}
 
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
