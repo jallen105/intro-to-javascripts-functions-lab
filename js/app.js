@@ -155,16 +155,16 @@ Complete the exercise in the space below:
 */
 
 const convertTemperature = (temp, scale) => {
-    if (scale === 'C') {
-        return `${((temp - 32) * 5) /9} (Fahrenheit)`
-    } else if (scale === 'F') {
-        return `${((temp * 9) / 5) + 32} (Celsius)`
+    if (scale === 'F') {
+        return `${((temp - 32) * 5) /9} (Celsius)`
+    } else if (scale === 'C') {
+        return `${((temp * 9) / 5) + 32} (Fahrenheit)`
     } else {
         return 'invalid scale'
     }
 }
 
-console.log('Exercise 8 Result:', convertTemperature(0, "F"));
+console.log('Exercise 8 Result:', convertTemperature( 32, "C"));
 
 /*
 Exercise 9: basicCalculator()
