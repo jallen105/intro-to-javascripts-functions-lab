@@ -129,7 +129,9 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-
+const calculateTip = (bill, tip) => {
+    return bill*(tip/100)
+}
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
 
