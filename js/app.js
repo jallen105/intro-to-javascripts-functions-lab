@@ -269,4 +269,4 @@ const numArgs = (...args) => {
     return argCount
 }
 
-console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4, 5, 6, 7));
