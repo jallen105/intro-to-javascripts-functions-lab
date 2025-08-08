@@ -261,12 +261,8 @@ This function should return the count of arguments passed to it when called.
 Complete the exercise in the space below:
 */
 
-const numArgs = (...args) => {
-    let argCount = 0
-    for (i = 0; i < args.length; i++) {
-        argCount++
-    }
-    return argCount
+const numArgs = (...args) => { 
+    return args.length 
 }
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4, 5, 6, 7));
