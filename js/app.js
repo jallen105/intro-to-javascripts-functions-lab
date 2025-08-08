@@ -68,7 +68,9 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-
+const generateEmail = (emailName, domain) => {
+    return `${emailName}@${domain}`
+}
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
