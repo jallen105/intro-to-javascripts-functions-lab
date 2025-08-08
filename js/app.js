@@ -177,6 +177,18 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-
+const basicCalculator = (num1, num2, operator) => {
+    if (operator === 'add') {
+        return num1 + num2
+    } else if (operator === 'subtract') {
+        return num1 - num2
+    } else if (operator === 'multiply') {
+        return num1 * num2
+    } else if (operator === 'divide') {
+        return num1 / num2
+    } else {
+        return 'invalid operator'
+    }
+}
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
