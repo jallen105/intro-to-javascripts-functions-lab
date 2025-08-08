@@ -87,7 +87,12 @@ Complete the exercise in the space below:
 */
 
 const greetUser = (user, timeOfDay) => {
-    return `Good ${timeOfDay}, ${user}`
+    if (timeOfDay === 'morning' || timeOfDay === 'afternoon' || timeOfDay === 'evening') {
+        return `Good ${timeOfDay}, ${user}!`
+    } else {
+        return 'Please enter a valid time of day'
+    }
+
 }
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
@@ -104,13 +109,13 @@ Complete the exercise in the space below:
 */
 
 const maxOfThree = (num1, num2, num3) => {
-    if (num1 > num2 && num1 < num3){
+    if (num1 > num2 && num1 > num3){
         return num1
     } else if (num2 > num1 && num2 > num3) {
         return num2
-    }else if (num3 > num1 && num3 > num2) {
+    } else if (num3 > num1 && num3 > num2) {
         return num3
-    }else {
+    } else {
         return num1
     }
 }
@@ -153,13 +158,13 @@ const convertTemperature = (temp, scale) => {
     if (scale === 'C') {
         return `${((temp - 32) * 5) /9} (Fahrenheit)`
     } else if (scale === 'F') {
-        return `${((temp * 9) / 5) - 32} (Celsius)`
+        return `${((temp * 9) / 5) + 32} (Celsius)`
     } else {
         return 'invalid scale'
     }
 }
 
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(0, "F"));
 
 /*
 Exercise 9: basicCalculator()
@@ -191,4 +196,4 @@ const basicCalculator = (num1, num2, operator) => {
     }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
